@@ -1,0 +1,198 @@
+/* Basic Reset and Font Family */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Section Styling */
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: url('image.png') no-repeat center center;
+    background-size: cover;
+}
+
+/* Form Box Styling */
+.form-box {
+    position: relative;
+    width: 400px;
+    height: auto; /* Adjusted for dynamic height */
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    flex-direction: column; /* Allow vertical stacking */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Header Styling */
+h2 {
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+
+/* Input Box Styling */
+.inputbox {
+    position: relative;
+    margin: 20px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+
+/* Label Styling */
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+
+/* Focus and Valid State for Input */
+input:focus~label,
+input:valid~label {
+    top: -5px;
+    font-size: 0.9em;
+}
+
+/* Input Field Styling */
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}
+
+/* Icon Styling */
+.inputbox ion-icon {
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    top: 20px;
+}
+
+/* Forget Section Styling */
+.forget {
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.forget input[type="checkbox"] {
+    margin-right: 1px;
+}
+
+.forget a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 50px;
+}
+.forget a:hover{
+    text-decoration: underline;
+}
+/* Button Styling */
+button {
+    width: 100%;
+    background: #333;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-bottom: 5px;
+}
+
+button:hover {
+    background: #555;
+}
+
+/* SSO Buttons Styling */
+.sso {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.sso p {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.sso-button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    transition: background 0.3s ease;
+}
+
+.google {
+    background: #db4437; /* Google color */
+}
+
+.facebook {
+    background: #3b5998; /* Facebook color */
+}
+
+.github {
+    background: #333; /* GitHub color */
+}
+
+.google:hover {
+    background: #c1351d;
+}
+
+.facebook:hover {
+    background: #2d4373;
+}
+
+.github:hover {
+    background: #444;
+}
+
+/* Register Section */
+.register p {
+    text-align: center;
+    font-size: 0.9em;
+    color: #fff;
+}
+
+.register a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register p a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.register p a:hover {
+    text-decoration: underline;
+}
